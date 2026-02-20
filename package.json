@@ -1,0 +1,50 @@
+{
+  "name": "@rezzed/dual-auth",
+  "version": "1.0.0",
+  "description": "Firebase Auth + API key dual authentication with encryption utilities",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/esm/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.cjs.json",
+    "test": "node --test test/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "peerDependencies": {
+    "firebase-admin": ">=11.0.0"
+  },
+  "peerDependenciesMeta": {
+    "firebase-admin": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "firebase-admin": "^12.0.0"
+  },
+  "keywords": [
+    "auth",
+    "authentication",
+    "firebase",
+    "api-key",
+    "dual-auth",
+    "middleware",
+    "encryption"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rezzedai/dual-auth.git"
+  }
+}
