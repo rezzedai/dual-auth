@@ -11,7 +11,7 @@ export function createFirebaseValidator(): TokenValidator {
     admin = require("firebase-admin");
   } catch {
     throw new Error(
-      "@rezzed/dual-auth: firebase-admin is required for Firebase token validation. " +
+      "@rezzed.ai/dual-auth: firebase-admin is required for Firebase token validation. " +
       "Install it with: npm install firebase-admin"
     );
   }

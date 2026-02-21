@@ -1,4 +1,4 @@
-# Contributing to @rezzed/dual-auth
+# Contributing to @rezzed.ai/dual-auth
 
 Thank you for your interest in contributing to dual-auth! We welcome contributions that improve authentication security, encryption utilities, and documentation.
 

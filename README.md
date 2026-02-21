@@ -1,15 +1,15 @@
-# @rezzed/dual-auth
+# @rezzed.ai/dual-auth
 
-[![npm version](https://img.shields.io/npm/v/@rezzed/dual-auth.svg)](https://www.npmjs.com/package/@rezzed/dual-auth)
-[![license](https://img.shields.io/npm/l/@rezzed/dual-auth.svg)](https://github.com/rezzedai/dual-auth/blob/main/LICENSE)
-[![node version](https://img.shields.io/node/v/@rezzed/dual-auth.svg)](https://www.npmjs.com/package/@rezzed/dual-auth)
+[![npm version](https://img.shields.io/npm/v/@rezzed.ai/dual-auth.svg)](https://www.npmjs.com/package/@rezzed.ai/dual-auth)
+[![license](https://img.shields.io/npm/l/@rezzed.ai/dual-auth.svg)](https://github.com/rezzedai/dual-auth/blob/main/LICENSE)
+[![node version](https://img.shields.io/node/v/@rezzed.ai/dual-auth.svg)](https://www.npmjs.com/package/@rezzed.ai/dual-auth)
 
 Dual authentication supporting API keys and Firebase tokens, with AES-256 encryption utilities.
 
 ## Installation
 
 ```bash
-npm install @rezzed/dual-auth
+npm install @rezzed.ai/dual-auth
 ```
 
 For Firebase token validation, also install `firebase-admin`:
@@ -23,7 +23,7 @@ npm install firebase-admin
 ### API Key Authentication
 
 ```typescript
-import { createDualAuth, hashKey } from "@rezzed/dual-auth";
+import { createDualAuth, hashKey } from "@rezzed.ai/dual-auth";
 
 // Create an API key store (example using in-memory storage)
 const apiKeyStore = {
@@ -54,7 +54,7 @@ if (context) {
 ### Dual Mode: API Keys + Firebase Tokens
 
 ```typescript
-import { createDualAuth, createFirebaseValidator } from "@rezzed/dual-auth";
+import { createDualAuth, createFirebaseValidator } from "@rezzed.ai/dual-auth";
 import admin from "firebase-admin";
 
 // Initialize Firebase Admin
@@ -82,7 +82,7 @@ if (context) {
 The library includes AES-256-CBC encryption utilities with PBKDF2 key derivation:
 
 ```typescript
-import { encrypt, decrypt, isEncrypted, deriveEncryptionKey } from "@rezzed/dual-auth";
+import { encrypt, decrypt, isEncrypted, deriveEncryptionKey } from "@rezzed.ai/dual-auth";
 
 // Encrypt/decrypt with a string secret
 const plaintext = "sensitive data";

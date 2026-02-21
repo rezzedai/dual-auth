@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2026-02-20
 
 ### Added
-- Initial release of @rezzed/dual-auth
+- Initial release of @rezzed.ai/dual-auth
 - Dual authentication supporting both API keys and Firebase tokens
 - AES-256-CBC encryption utilities for secure data handling
 - Pluggable API key store system for flexible storage backends
